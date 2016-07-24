@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDoList</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<header>
+		<section>
+			<form action="javascript:postaction()" id="form">
+					<label for="title">ToDoList</label>
+					<input type="text" id="title" name="title" placeholder="添加代办事项" required="required" autocomplete="off">
+			</form>
+		</section>
+	</header>
+		<section>
+			<h2 onclick="save()">正在进行 <span id="todocount">0</span></h2>
+			<ol id="todolist" class="demo-box"></ol>
+			<h2>已经完成 <span id="donecount">0</span></h2>
+			<ul id="donelist"></ul>
+		</section>
+		<footer>
+			Copyright © 2014 todolist.cn <a href="javascript:clear();">clear</a>
+		</footer>
+		<script src="index.js"></script>
+</body>
+</html>
